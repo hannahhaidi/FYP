@@ -1,0 +1,54 @@
+@extends('layout.app3')
+@section('content')
+
+<div class="container">
+    <div class="container">
+
+        <h3><center><strong>STUDENT ACTIVITY REGISTRATION</strong></center></h3>
+        <hr />
+        
+
+        <body>
+                <div class="container">
+                
+                    <table>
+                        <table align ="center">
+                            <tr>
+                                
+                                <th colspan="5">Activity Code:</th>
+                                <th colspan="5">User ID:</th>
+                               
+                                
+                                
+                                
+                            </tr>
+                            
+                            @foreach($registration as $registration)
+                            <tr>
+                                
+                                <td colspan="5">{{$registration->activity_code}}</td>
+                                <td colspan="5">{{$registration->user_id}}</td>
+                                
+                               
+                                
+                                
+                            </tr>
+                            @endforeach
+                            
+                            
+                          
+                            
+                            
+                        </table>
+  
+
+                        
+                </div> 
+                
+
+               
+                     </body>
+            </div>
+    </div>
+</div>
+@endsection
