@@ -134,7 +134,7 @@ class AdminsController extends Controller
     {
         $process = DB::table('processes')->orderBy('id', 'DESC')->first();
         $activity_code = $process->activity_code;
-        $url = "http://fyp.dev/admins/showform/".$activity_code;
+        $url = "http://msu-s-gems.herokuapp.com/admins/showform/".$activity_code;
         
         return QRCode::url($url)
                               ->setSize(12)
