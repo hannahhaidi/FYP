@@ -163,10 +163,14 @@
     
     
                         @media screen and (max-width: 600px) {
-                        .col-25, .col-75, input[type=submit] 
+                        .col-25, .col-75, input[type=submit] #title_message
                         {
-                            width: 100%;
-                            margin-top: 0;
+                            visibility: hidden;
+                            clear: both;
+                            float: left;
+                            margin: 10px auto 5px 20px;
+                            width: 28%;
+                            display: none;
                         }
                         }
 
