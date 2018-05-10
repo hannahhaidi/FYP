@@ -1,4 +1,4 @@
-@extends('layout.app1')
+
 @section('content')
 
 
@@ -163,7 +163,7 @@
     
     
                         @media screen and (max-width: 600px) {
-                        .col-25, .col-75, input[type=submit] #title_message
+                        #title_message
                         {
                             visibility: hidden;
                             clear: both;
