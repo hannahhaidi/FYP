@@ -20,6 +20,8 @@ use Activity;
 
 use QRCode;
 
+use Jenssegers\Agent\Facades\Agent;
+
 //use request;
 
 class PagesController extends Controller
