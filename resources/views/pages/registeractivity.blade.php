@@ -52,7 +52,7 @@
 
                 <div class = "row">
                 <div class="col-25">
-                <label>Activity Code:</label></div>
+                <label>Programme Code:</label></div>
                 <div class="col-75">
                 <label>{{$process->code}}</label>
                 <br />
