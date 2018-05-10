@@ -53,7 +53,6 @@ Route::prefix('admins')->group(function(){
    
 });
 
-
 Route::get('/studentslist', 'AdminsController@studentslist');
 Route::resource('lecturers', 'LecturersController');
 Route::get('/createactivity', 'AdminsController@createactivity');
