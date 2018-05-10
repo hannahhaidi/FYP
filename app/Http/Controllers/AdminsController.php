@@ -31,7 +31,7 @@ class AdminsController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth:admin', ['except' => 'qrcode']);
+        $this->middleware('auth:admin', ['except' => 'qrcode', 'registeractivity']);
     }
 
     /**
@@ -134,7 +134,7 @@ class AdminsController extends Controller
     {
         $process = DB::table('processes')->orderBy('id', 'DESC')->first();
         $activity_code = $process->activity_code;
-        $url = "http://msu-s-gems.herokuapp.com/admins/showform/".$activity_code;
+        $url = "http://msu-s-gems.herokuapp.com/activity/".$activity_code."/register";
         
         return QRCode::url($url)
                               ->setSize(12)
