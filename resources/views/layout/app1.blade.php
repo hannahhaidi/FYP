@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
         <title>MSU Student's Activity Management System</title>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -299,6 +301,48 @@
             font-size: 16px; padding: .6rem;
             font-weight: bold;
             }
+
+            /* Tablet Landscape */
+
+            @media screen and (max-width: 1060px) {
+
+            #primary { width:67%; }
+            #secondary { width:30%; margin-left:3%;}  
+
+            }
+
+            /* Tabled Portrait */
+
+            @media screen and (max-width: 768px) {
+
+            #primary { width:100%; }
+            #secondary { width:100%; margin:0; border:none; }
+
+            }
+
+            @media (min-device-width:600px) {
+
+            img[data-src-600px] {
+            content: attr(data-src-600px, url);
+
+            }
+
+            }
+
+            @media (min-device-width:800px) {
+
+            img[data-src-800px] {
+            content: attr(data-src-800px, url);
+
+            }
+
+            }
+
+            @media (min-width: 640px) { body {font-size:1rem;} } 
+
+            @media (min-width:960px) { body {font-size:1.2rem;} } 
+
+            @media (min-width:1100px) { body {font-size:1.5rem;} }
 
 
         </style>
