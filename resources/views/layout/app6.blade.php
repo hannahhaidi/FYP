@@ -322,7 +322,7 @@
             <main class="py-4">
                     <div class="container">
                             <div class="w3-container w3-teal">
-                                <center><h3><img src = "/Images/trans_logo.png" height="330" width="800"></h3></center>
+                                <center><h3><img src = "/Images/trans_logo.png" height="330" width="900"></h3></center>
                             </div>   
                 </div>
             
