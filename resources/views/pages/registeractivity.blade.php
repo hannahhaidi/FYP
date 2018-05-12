@@ -122,7 +122,7 @@
                         border: none;
                         border-radius: 4px;
                         cursor: pointer;
-                        float: right;
+                        /*float: right;*/
                         position: relative;
                         top: 10px;
                         left: 720px;
