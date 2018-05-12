@@ -263,7 +263,7 @@
                                                                 
                 <label for="user_id">Student ID:</label></div>
                 <div class="col-75">
-                <input type="text" name="user_id" id="user_id"  class="form-control" placeholder="Enter User ID" value="{{ old('user_id') }}"/>
+                <input type="text" name="user_id" id="user_id"  class="form-control" placeholder="Enter Student ID" value="{{ old('user_id') }}"/>
                 <span class="text-danger">{{ $errors->first('user_id') }}</span>
                 <br />
                 </div>
