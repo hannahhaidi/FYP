@@ -122,8 +122,8 @@
                         border: none;
                         border-radius: 4px;
                         cursor: pointer;
-                        /*float: right;*/
-                        position: relative;
+                        float: left
+                        /*position: relative;*/
                         top: 10px;
                         left: 720px;
                         }

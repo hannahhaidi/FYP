@@ -210,10 +210,10 @@
         
 
         </style>
-    <body>
-    
-   
+    <body
 
+    style = "background:url(/Images/msu_building.jpg); background-repeat:no-repeat; background-size: cover; background-position: center center;">
+    
 
     <div id ="app1">
             <main class="py-4">
