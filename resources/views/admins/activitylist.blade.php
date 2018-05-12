@@ -62,6 +62,7 @@
                                 <th colspan="20">Activity Organizer:</th>
                                 <th colspan="20">Activity Date:</th>
                                 <th colspan="20">Activity Venue:</th>
+                                <th colspan="20">Person in Charge:</th>
                             </tr>
                             
                             @foreach($process as $process)
@@ -74,6 +75,7 @@
                                 <td colspan="20">{{$process->organizer}}</td>
                                 <td colspan="20">{{$process->date}}</td>
                                 <td colspan="20">{{$process->venue}}</td>
+                                <td colspan="20">{{$process->person}}</td>
                             </tr>
                             @endforeach
                             

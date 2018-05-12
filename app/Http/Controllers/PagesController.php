@@ -52,8 +52,6 @@ class PagesController extends Controller
         return view('pages.registration');
     }
 
-
-
     public function calendar(){
         return view('pages.calendar');
     }
@@ -93,7 +91,6 @@ class PagesController extends Controller
     
                 ]);
 
-               
                 return view('pages.studentregister');
                 //dd('The registration is recorded. Thank you!');
                

@@ -7,9 +7,6 @@
         <div class = "card-header" >
             <ul>
    <!--<li><a href ="/" <img src = "Images/msu.png" width="100" height="100"></li>-->
-              <li class="nav-item">
-                <a class="nav-link" href="/home">Home<span class="sr-only">(current)</span></a>
-              </li>
 
               <li class="nav-item">
                 <a class="nav-link" href="/about">GEmS Planner<span class="sr-only">(current)</span></a>

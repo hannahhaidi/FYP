@@ -4,7 +4,9 @@
 <div class="container">
     <div class="container">
 
-        <h3><center><strong>STUDENT ACTIVITY REGISTRATION</strong></center></h3>
+        <h3><center><strong>STUDENT'S ACTIVITY REGISTRATION</strong></center></h3>
+        <hr />
+        <h5><center><strong>ACTIVITY'S NAME: {{$process1->name}}</strong> </center></h5>
         <hr />
         
 
@@ -16,7 +18,7 @@
                             <tr>
                                 
                                 <th colspan="5">Activity Code:</th>
-                                <th colspan="5">User ID:</th>
+                                <th colspan="5">Student ID:</th>
                                
                                 
                                 

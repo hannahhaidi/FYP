@@ -73,8 +73,8 @@
                 width: 1060px;
                 float: center;*/
                 position: relative;
-                left: 14%;
-                width: 620px;
+                left: 20%;
+                width: 550px;
             }
 
             .jumbotron{
