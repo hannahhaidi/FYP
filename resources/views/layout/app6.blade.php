@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=700", initial-scale="1",maximum-scale="1",user-scalable="no">
+        <meta name="viewport" content="width=500", initial-scale="1",maximum-scale="1",user-scalable="no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="true">
         <title>MSU Student's Activity Management System</title>
@@ -201,13 +201,18 @@
             margin: 0; background: #101010;
             }
 
+            body
+            {
+                background-color: white;
+            }
+
 
         
 
         </style>
-    <body
+    <body>
     
-    style = "background:url(/Images/msu_building.jpg); background-repeat:repeat; background-size: 110% 110%;">
+   
 
 
     <div id ="app1">
