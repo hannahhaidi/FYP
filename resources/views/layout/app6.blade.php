@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=2000", initial-scale="1",maximum-scale="1",user-scalable="no">
+        <meta name="viewport" content="width=1500", initial-scale="1",maximum-scale="1",user-scalable="no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="true">
         <title>MSU Student's Activity Management System</title>
@@ -320,6 +320,7 @@
 
     <div id ="app1">
             <main class="py-4">
+            @include ('inc1.header')
             
             @yield('content')
           
