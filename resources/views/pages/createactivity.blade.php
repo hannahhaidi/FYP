@@ -269,9 +269,7 @@
                         <br />
                         </div>
                         </div>
-        
-                     
-        
+      
                         <div class="row">
                         <div class="col-25">
                         <div class="{{ $errors->has('date') ? 'has-error' : '' }}"></div> 

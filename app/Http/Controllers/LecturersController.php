@@ -14,14 +14,8 @@ class LecturersController extends Controller
     {
         $students = Lecturers::find(1)->students;
         return view ('lecturer.index', compact ('students'));
-        //return view('lecturer.index')->with('students', $students);
-
-        /*$id = Auth::id();
-        $lecturers = \App\Lecturers::where('user_id', $id)->get();
-        return view('lecturer.index', compact ('lecturers'));*/
+       
     }
-
- 
 
 }
 

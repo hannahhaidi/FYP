@@ -40,19 +40,19 @@ class AdminsController extends Controller
      * @return \Illuminate\Http\Response
      */
    
-    public function index(){
-        
+    public function index()
+    {
         $uid = Auth::id();
         $students = \App\Students::where('lecturer_id', $uid)->get();
         return view ('admins.index', compact ('students'));
     }
 
-    public function createactivity(){
+    public function createactivity()
+    {
         return view('pages.createactivity');
     }
 
     public function store(Request $request)
-
     {
         /*$uid = Auth::id();
         $process = Process::find();
@@ -81,8 +81,6 @@ class AdminsController extends Controller
 
                     'person' => 'required',
     
-                  
-    
                 ],[
 
                     'activity_code.required' => ' The activity code field is required.',
@@ -102,9 +100,6 @@ class AdminsController extends Controller
                     'venue.max' => ' The venue field may not be greater than 50 characters.',
 
                     'person.required' => ' The person in charge field is required.',
-
-
-    
                 ]);
 
         
@@ -112,7 +107,7 @@ class AdminsController extends Controller
                 //return view('pages.createactivity');
                 //dd('You are successfully added all fields.');
                
-                }
+        }
                 {
                     
                 }
@@ -123,9 +118,7 @@ class AdminsController extends Controller
     public function showform(Request $request, $id)
     {
         /*$process=\App\Process::where('activity_code', $request->activity_code)->get();*/
-
         $process = DB::table('processes')->orderBy('id', 'DESC')->first();
-    
         return view('admins.showform')->with('process', $process);
         
     }
@@ -140,22 +133,20 @@ class AdminsController extends Controller
                               ->setSize(12)
                               ->setMargin(2)
                               ->svg();
-
     }
 
    
-    public function activitylist(){
-
+    public function activitylist()
+    {
         $process = \App\Process::all();
         return view('admins.activitylist', ['process' => $process]);
     }
        
 
-        public function show($id){
-
+    public function show($id)
+    {
         /*$id = Auth::id();*/
         $students = Students::find($id);
-        
         /*$lectureractivity = LecturerActivity::find($id);*/
         $lectureractivity = \App\LecturerActivity::where('student_id', $id)->get();
         $lecturerskill = \App\LecturerSkill::where('student_id', $id)->get();
@@ -163,13 +154,15 @@ class AdminsController extends Controller
 
     }
 
-    public function registration(){
-        
-        
+    public function registration()
+    {
         $process = \App\Process::all();
         return view('admins.registration', ['process' => $process]);
+    }
 
-
+    public function analysis()
+    {
+        return view ('lecturer.analysis');
     }
     
     }

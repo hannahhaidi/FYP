@@ -66,9 +66,9 @@ Route::get('/activity/{activity_code}/register', 'PagesController@registeractivi
 Route::post('/studentregister', 'PagesController@store');
 
 
-Route::get('analysis', 'AnalysisController@analysis');
+/*Route::get('analysis', 'AnalysisController@analysis');
 Route::get('downloadExcel/{type}', 'AnalysisController@downloadExcel');
-Route::post('importExcel', 'AnalysisController@importExcel');
+Route::post('importExcel', 'AnalysisController@importExcel');*/
 
 Auth::routes();
 

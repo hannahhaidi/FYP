@@ -64,7 +64,7 @@
                 <div class="col-md col-md-offset">
                         <div class="container">
                 
-                                <table align="center">
+                        <table align="center">
                         <center>
                         <!--<table align ="center">-->
                             

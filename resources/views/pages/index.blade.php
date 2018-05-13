@@ -128,7 +128,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/about') }}">Home</a>
                     @else
                     <div class="dropdown">
                         <button class="dropbtn">Login</button>

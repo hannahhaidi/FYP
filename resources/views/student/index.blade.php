@@ -9,8 +9,9 @@
         <h4><center><strong>PERSONAL ENRICHMENT COMPETENCY COURSES</strong></center></h4>
         <hr />
 
-        <div class = "container">
-            
+        <div class="container">
+                
+                
             <table align="center">
                 <center>
                    
@@ -81,8 +82,8 @@
                     </div>
                 </center>
             </table>
-    </div>                
-    </div>
+    </div>  
+</div>   
 </div>   
 </div>
 @endsection

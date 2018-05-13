@@ -1,13 +1,11 @@
 <div class="container">
 <div class="w3-container w3-teal">
-    <center><h3><a href="/home"><img src = "/Images/trans_logo.png" height="300" width="1050"></h3></center>
+    <center><h3><a href="/about"><img src = "/Images/trans_logo.png" height="300" width="1050"></h3></center>
 </div>
 
     <div class="container">
         <div class = "card-header" >
             <ul>
-   <!--<li><a href ="/" <img src = "Images/msu.png" width="100" height="100"></li>-->
-
               <li class="nav-item">
                 <a class="nav-link" href="/about">GEmS Planner<span class="sr-only">(current)</span></a>
               </li>

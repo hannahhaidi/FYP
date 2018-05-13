@@ -60,7 +60,11 @@
 
 <div id ="app2">
         <main class="py-4">
-        @include ('inc1.header')
+                <div class="container">
+                        <div class="w3-container w3-teal">
+                            <center><h3><a href="/"><img src = "/Images/trans_logo.png" height="330" width="1050"></a></h3></center>
+                        </div>   
+            </div>
         @yield('content')
         </main>
 </div>

@@ -19,37 +19,19 @@
                                 
                                 <th colspan="5">Activity Code:</th>
                                 <th colspan="5">Student ID:</th>
-                               
-                                
-                                
-                                
                             </tr>
                             
                             @foreach($registration as $registration)
                             <tr>
                                 
                                 <td colspan="5">{{$registration->activity_code}}</td>
-                                <td colspan="5">{{$registration->user_id}}</td>
-                                
-                               
-                                
-                                
+                                <td colspan="5">{{$registration->user_id}}</td> 
                             </tr>
                             @endforeach
                             
-                            
-                          
-                            
-                            
-                        </table>
-  
-
-                        
+                        </table>      
                 </div> 
-                
-
-               
-                     </body>
+                </body>
             </div>
     </div>
 </div>

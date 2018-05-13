@@ -1,6 +1,6 @@
 <div class = "container">
 <div class="w3-container w3-teal">
-  <center><h3><a href="/home"><img src = "/Images/trans_logo.png" height="300" width="1050"></h3></center>
+  <center><h3><a href="/admins"><img src = "/Images/trans_logo.png" height="300" width="1050"></h3></center>
 </div>
     <div class="container">
       <div class = "card-header" >

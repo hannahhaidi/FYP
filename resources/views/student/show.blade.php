@@ -1,6 +1,8 @@
 @extends('layout.app3')
 @section('content')
 
+
+
 <div class="container">
     <div class="container">
 
@@ -17,7 +19,7 @@
                                 
                                 <th colspan="20">Student ID:</th>
                                 <th colspan="20">Student Name:</th>
-                                
+                                <th colspan="20">Mentor Name:</th>
                             </tr>
                             
                             @include('student.findstudents')

@@ -14,14 +14,11 @@ class LecturerActivityController extends Controller
 {
     public function show($id)
     {
-
         /*$id = Auth::id();*/
         $students = Students::find($id);
-        
         /*$lectureractivity = LecturerActivity::find($id);*/
         $lecturerskill = \App\lecturerskill::where('student_id', $id)->get();
         $lectureractivity = \App\lectureractivity::where('student_id', $id)->get();
         return view('admins.show', compact ('lectureractivity', 'lecturerskill'))->with('lectureractivity', $lectureractivity )->with('students', $students);
-
     }
 }

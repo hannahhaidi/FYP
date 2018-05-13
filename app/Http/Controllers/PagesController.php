@@ -22,48 +22,52 @@ use QRCode;
 
 use Jenssegers\Agent\Facades\Agent;
 
-//use request;
+
 
 class PagesController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return view  ('pages.index');
-      
     }
 
-    public function about(){
+    public function about()
+    {
         return view('pages.about');
     }
 
-    public function activity(){
-        
+    public function activity()
+    {
         return view('pages.activity');
     }
 
-    public function pec(){
+    public function pec()
+    {
         return view('pages.pec');
     }
 
-    public function login(){
+    public function login()
+    {
         return view('pages.about');
     }
 
-    public function registration(){
+    public function registration()
+    {
         return view('pages.registration');
     }
 
-    public function calendar(){
+    public function calendar()
+    {
         return view('pages.calendar');
     }
 
-    public function registeractivity(Request $request){
-
+    public function registeractivity(Request $request)
+    {
         $process=\App\Process::where('activity_code', $request->activity_code)->first();
         return view('pages.registeractivity')->with('process', $process);
     }
 
     public function store(Request $request)
-
     {
         
         $user = new Registration;
@@ -94,27 +98,24 @@ class PagesController extends Controller
                 return view('pages.studentregister');
                 //dd('The registration is recorded. Thank you!');
                
-                }
+        }
 
     }
 
-    public function suggestion(){
-
+    public function suggestion()
+    {
         $id = Auth::id();
         $activity = \App\Activity::where('user_id', $id)->get();
         $process = \App\Activity::where('code', $id)->get();
         return view('pages.suggestion', ['activity' => $activity], ['process' => $process] );
     }
 
-    public function show($id){
-
-     
+    public function show($id)
+    {
         $uid = Auth::id();
         $activity = \App\Activity::where('user_id', $id)->get();
         $process = \App\Process::where('code', $id)->get();
-        
         return view('pages.show')->with('activity', $activity )->with('process', $process);
-
     }
 
 
