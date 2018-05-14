@@ -8,7 +8,8 @@
 
         <h3><center><strong>PRIORITIZED STUDENTS</strong></center></h3>
         <hr />
-        <h5><center><strong>ACTIVITY'S NAME: {{$activity1->type}}</strong> </center></h5>
+        <h5><center><strong>ACTIVITY PROGRAMME: {{$activity1->type}}</strong> </center></h5>
+        
 
         <hr/><body>
                 <div class="container">

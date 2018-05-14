@@ -62,6 +62,7 @@ Route::get('/activitylist/{activity_code}', 'StudentsController@show')->name('re
 Route::get('/registration', 'AdminsController@registration');
 Route::get('/registration/{activity_code}', 'RegistrationController@show')->name('resource.show');
 Route::get('/analysis', 'AdminsController@analysis');
+Route::get('/updateanalysis', 'AdminsController@updateanalysis');
 Route::get('/activity/{activity_code}/register', 'PagesController@registeractivity');
 Route::post('/studentregister', 'PagesController@store');
 

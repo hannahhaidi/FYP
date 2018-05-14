@@ -27,16 +27,16 @@
 
     <style>
 
-        .btn-primary{
+        .btn-primary
+        {
             background-color: darkred;
             color: white;
             border: 1px solid #ccc;
             border-radius: 4px;
-            
         }
 
         .btn-primary:hover{
-            background-color: black;
+            background-color: darkslategray;
         }
 
 

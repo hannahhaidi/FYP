@@ -11,6 +11,7 @@ use App\Process;
 use App\Admins;
 use App\Students;
 use App\LecturerSkill;
+use App\UpdateAnalysis;
 //use Request;
 use DB;
 use QRCode;
@@ -162,7 +163,17 @@ class AdminsController extends Controller
 
     public function analysis()
     {
-        return view ('lecturer.analysis');
+        $uid = Auth::id();
+        $table = \App\UpdateAnalysis::where('lecturer_id', $uid)->get();
+        return view ('lecturer.analysis', ['table' => $table]);
     }
     
+    public function updateanalysis()
+    {
+        //$table = \App\UpdateAnalysis::all();
+        $uid = Auth::id();
+        $table = \App\UpdateAnalysis::where('lecturer_id', $uid)->get();
+        return view ('lecturer.updateanalysis', ['table' => $table]);
+    }
+
     }
